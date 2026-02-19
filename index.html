@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Creation</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif; padding: 24px; max-width: 520px; 
+    }
+    input {
+        width: 100%; padding: 10px; margin: 8px 0 14px;
+    }
+    button {
+        padding: 10px 14px; 
+    }
+    #output {
+        margin-top: 14px; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Account Creation</h1>
+
+  <label for="usernameInput">Username</label>
+  <input type="text" id="usernameInput" placeholder="Enter at least 7 characters" />
+
+  <label for="passwordInput">Password</label>
+  <input type="password" id="passwordInput" placeholder="At least 10 characters, 1 letter, 1 number" />
+
+  <button py-click="account_creation">Sign up</button>
+
+  <p id="output"></p>
+
+  <script type="py" src="main.py"></script>
+</body>
+</html>
